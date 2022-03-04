@@ -1,4 +1,4 @@
-company_name = "Infosys"
+company_name = "Roy Enterprise"
 
 def my_company():
     global company_name
