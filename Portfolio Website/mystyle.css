@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Bacground styling */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://cdn.wallpapersafari.com/8/67/LEtx0h.jpg");
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+}
+
+/* for the whole list */
+ul{
+    list-style-type:none; /*no markers and bullets for the list*/
+    float:right; /*to move the ul element to the right*/
+    margin-top:20px;
+}
+
+/* for the list items.*/
+/* using CSS Combinator selectors*/
+/* inline-block allows to set height and width*/
+/* so prefer inline-block over inline*/
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration:none;
+    color:white;
+    padding: 5px 20px; /*padding: top/bottom right/left*/
+    border: 1px solid #fff transparent;
+    transition:0.7s linear;
+}
+
+ul li a:hover{
+    color:chartreuse;
+    background-color: white;
+}
+
+.logo img{
+    float:left;
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    opacity: 0.4;
+}
+
+.main{
+    width: 1200px;
+    margin:auto;
+}
+
+.title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.title h1{
+    color:#fff;
+    font-size:70px;
+}
+
+.button{
+    position:absolute;
+    top:62%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.button a{
+    text-decoration:none;
+    color:white;
+    font-size:20p;
+    width:0%;
+    padding: 5px 20px;
+    border-radius:25px;
+    border:1px solid;
+    transition:0.7s linear;
+}
+
+.button a:hover{
+    color:chartreuse;
+    background-color: white;
+    width:100%;
+}
